@@ -1,0 +1,18 @@
+import roque.*
+import comidas.*
+import masAves.*
+import pepita.*
+
+test "roque trabaja" {
+    roque.tuPupiloEs(pepita)
+    roque.entrenar()
+    roque.tuPupiloEs(pipa)
+    roque.entrenar()
+    assert.equals(1245, pepita.energia())
+    assert.equals(15, pipa.kmsRecorridos() ) 
+    assert.equals(300, pipa.gramosIngeridos())
+    roque.tuPupiloEs(pepon)
+    roque.entrenar()
+    roque.entrenar()
+    assert.equals(1178, pepon.energia())
+}
